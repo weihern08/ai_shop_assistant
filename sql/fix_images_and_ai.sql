@@ -10,7 +10,7 @@ UPDATE products SET image_path = 'uploads/products/p006-sanitizer.jpg' WHERE sku
 INSERT INTO settings (setting_key, setting_value) VALUES
     ('ai_provider', 'agnes'),
     ('agnes_api_url', 'https://apihub.agnes-ai.com/v1'),
-    ('agnes_api_key', 'sk-vFrmmMF56DX6WJeQrWeA4iRUxGOJBwuHqIVNpanM8Qa42Vhm'),
+    ('agnes_api_key', ''),
     ('agnes_model', 'agnes-3.0-flash'),
     ('agnes_fallback_models', 'agnes-2.5-flash'),
     ('gemini_model', 'gemini-3.6-flash'),
