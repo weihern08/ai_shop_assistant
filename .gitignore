@@ -1,0 +1,26 @@
+# Secrets / local overrides
+includes/config.local.php
+includes/install.lock
+
+# Local databases
+data/*.sqlite
+data/*.sqlite-journal
+
+# Runtime uploads (sample images live under assets/products/)
+uploads/products/*
+!uploads/products/.htaccess
+!uploads/products/index.html
+uploads/cache/*
+!uploads/cache/.htaccess
+!uploads/cache/index.html
+
+# SSL local certs
+ssl/certs/*.key
+ssl/certs/*.crt
+ssl/certs/openssl.cnf
+
+# Packaging / OS junk
+*.zip
+.DS_Store
+Thumbs.db
+*.log

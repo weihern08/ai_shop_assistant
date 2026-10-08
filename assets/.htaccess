@@ -1,0 +1,16 @@
+# Allow public access to CSS / JS / fonts / images
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# Correct MIME types (some hosts mis-detect)
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/svg+xml .svg
+    AddType font/woff2 .woff2
+</IfModule>
